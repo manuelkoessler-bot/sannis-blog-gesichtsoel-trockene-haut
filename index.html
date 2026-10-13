@@ -389,6 +389,15 @@
   .compare .card .card-title{font-family:'Poppins',sans-serif;font-weight:600;margin:0 0 10px;font-size:18px;line-height:1.25}
   .oils .oil .card-title{font-family:'Poppins',sans-serif;font-weight:600;margin:6px 0 4px;font-size:16.5px;line-height:1.25}
   @media(max-width:600px){.hero img{object-position:78% center}}
+  /* Mini-CTA nach dem Inhaltsverzeichnis */
+  .cta-mini{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--lav-100);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:0 0 30px}
+  .cta-mini p{margin:0;flex:1;min-width:220px;font-size:16px;color:var(--ink)}
+  .cta-mini .btns{display:flex;gap:10px;flex-wrap:wrap}
+  .cta-mini a.mbtn{display:inline-flex;align-items:center;background:var(--purple);color:#fff !important;font-weight:600;font-size:14px;padding:10px 18px;border-radius:50px;white-space:nowrap;text-decoration:none}
+  .cta-mini a.mbtn.ghost{background:#fff;color:var(--purple) !important;border:1.5px solid var(--purple)}
+  .cta-mini a.mbtn:hover{text-decoration:none;opacity:.92}
+  /* KI-Kennzeichnung (EU AI Act Art. 50) */
+  .ai-label{position:absolute;right:14px;bottom:12px;background:rgba(33,27,46,.55);color:#fff;font-size:11px;letter-spacing:.3px;padding:4px 9px;border-radius:50px;backdrop-filter:blur(4px);pointer-events:none}
 </style>
 </head>
 <body>
@@ -413,6 +422,7 @@
 
 <section class="hero">
   <img src="hero-gesichtsoel-trockene-haut.webp" alt="Lächelnde Frau trägt Gesichtsöl mit den Fingerspitzen auf die Wange auf, im Hintergrund blühender Lein auf einer Alpenwiese, Gesichtsöl bei trockener Haut" width="1344" height="752" fetchpriority="high">
+  <span class="ai-label">KI-generiertes Bild</span>
   <div class="hero-overlay">
     <span class="eyebrow">Gesichtspflege · Skin Food</span>
     <h1>Gesichtsöl bei trockener Haut: Warum Leinöl so guttut und wie du es richtig anwendest</h1>
@@ -455,6 +465,16 @@
     <li><a href="#faq">Häufige Fragen</a></li>
   </ol>
 </nav>
+
+<!-- ============ MINI-CTA ============ -->
+<div class="cta-mini">
+  <p>Die Öl-Routine für trockene Haut: Rosentonic, dann Tagesöl oder Nachtöl auf Basis von Bio-Leinöl.</p>
+  <div class="btns">
+    <a class="mbtn" href="https://sannis.at/produkt/sannis-skin-food-tagoel/">Zum Tagesöl</a>
+    <a class="mbtn ghost" href="https://sannis.at/produkt/sannis-skin-food-nachtoel/">Zum Nachtöl</a>
+  </div>
+</div>
+
 
 <!-- ============ SECTION 1 ============ -->
 <h2 id="welches-oel">Welches <span class="accent">Gesichtsöl</span> passt zu trockener Haut?</h2>
